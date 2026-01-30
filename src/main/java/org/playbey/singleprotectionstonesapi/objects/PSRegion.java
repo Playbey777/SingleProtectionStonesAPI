@@ -26,8 +26,5 @@ public interface PSRegion {
 
     List<UUID> getOwners();
 
-    /**
-     * Находится ли регион в разрушенном состоянии (0 прочности).
-     */
     boolean isDestroyed();
 }

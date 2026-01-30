@@ -10,7 +10,7 @@ public class PSRegionDamageEvent extends Event implements Cancellable {
     private static final HandlerList handlers = new HandlerList();
     private final PSRegion region;
     private int damage;
-    private final String explosionType; // "TNT", "C4", "shockwave" и т.д.
+    private final String explosionType;
     private boolean cancelled;
 
     public PSRegionDamageEvent(PSRegion region, int damage, String explosionType) {

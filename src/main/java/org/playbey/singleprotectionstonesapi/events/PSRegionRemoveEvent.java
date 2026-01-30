@@ -6,13 +6,12 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.playbey.singleprotectionstonesapi.objects.PSRegion;
-
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public class PSRegionRemoveEvent extends Event implements Cancellable {
 
     private static final HandlerList handlers = new HandlerList();
-    private final Player player; // Может быть null, если удалено консолью/взрывом
+    private final Player player;
     private final PSRegion region;
     private final Cause cause;
     private boolean cancelled;

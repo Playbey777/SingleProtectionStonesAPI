@@ -19,10 +19,6 @@ public class SingleProtectionStonesAPI extends JavaPlugin {
         return instance;
     }
 
-    /**
-     * Получить доступ к методам API.
-     * @return Реализация API или null, если основной плагин не загружен.
-     */
     public static PSAPIHandler getAPI() {
         if (implementation == null) {
             throw new IllegalStateException("SingleProtectionStones core plugin is not loaded or hasn't registered the API yet!");
@@ -30,9 +26,6 @@ public class SingleProtectionStonesAPI extends JavaPlugin {
         return implementation;
     }
 
-    /**
-     * Внутренний метод для регистрации реализации (вызывается основным плагином).
-     */
     public static void registerImplementation(PSAPIHandler handler) {
         implementation = handler;
         if (instance != null) {
