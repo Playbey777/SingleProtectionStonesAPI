@@ -2,6 +2,7 @@ package org.playbey.singleprotectionstonesapi.managers;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.playbey.singleprotectionstonesapi.objects.PSRegion;
 
@@ -11,6 +12,8 @@ import java.util.UUID;
 public interface PSAPIHandler {
 
     boolean isProtectionBlock(Material material);
+
+    boolean isProtectionStone(Block block);
 
     PSRegion getRegion(Location location);
 

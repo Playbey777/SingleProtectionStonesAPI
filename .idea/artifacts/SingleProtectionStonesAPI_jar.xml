@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SingleProtectionStonesAPI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SingleProtectionStonesAPI_jar</output-path>
+    <root id="archive" name="SingleProtectionStonesAPI.jar">
+      <element id="module-output" name="SingleProtectionStonesAPI" />
+    </root>
+  </artifact>
+</component>
